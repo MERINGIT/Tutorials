@@ -5,7 +5,7 @@ import './Profile.css';
 const Profile = () => {
   const location = useLocation();
   const { firstName, lastName, email } = location.state || {};
-
+{/* Basic Profile Page */}
   return (
     <div className="profile-container">
       <h2>Profile Page</h2>

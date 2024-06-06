@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Registration from './Registration';
 import Profile from './Profile';
 import './App.css';
-
+{/* Implemented routing in react */}
 function App() {
   return (
     <Router>

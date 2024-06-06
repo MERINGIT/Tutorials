@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Registration.css';
-
+{/* useState variable*/}
 const Registration = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -13,7 +13,7 @@ const Registration = () => {
 
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
-
+{/* form validation */}
   const validateForm = () => {
     const newErrors = {};
     
@@ -43,7 +43,7 @@ const Registration = () => {
       [e.target.name]: e.target.value
     });
   };
-
+{/* For navigating to profile page with the user details */}
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
@@ -51,6 +51,7 @@ const Registration = () => {
     }
   };
 
+{/* Basic Form Container */}
   return (
     <div className="form-container">
       <h2>Profile Registration</h2>
