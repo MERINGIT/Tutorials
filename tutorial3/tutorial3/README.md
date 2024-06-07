@@ -15,7 +15,7 @@ This is a simple React application that allows users to register their profile w
 
 ## GitHub Repository
 
-[GitLab Repository Link](https://git.cs.dal.ca/msaju/csci-5709-tutorials/-/tree/main/tutorial2?ref_type=heads)
+[GitLab Repository Link](https://git.cs.dal.ca/msaju/csci-5709-tutorials/-/tree/main/tutorial3?ref_type=heads)
 
 ## Deployment
 
