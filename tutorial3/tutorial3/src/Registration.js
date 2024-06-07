@@ -29,7 +29,20 @@ const Registration = () => {
     if (formData.password.length < 8) {
       newErrors.password = 'Password should be at least 8 characters long.';
     }
-    if (formData.password !== formData.confirmPassword) {
+    if (formData.password.length < 8) {
+      newErrors.password = 'Password should be at least 8 characters long.';
+  } 
+    if (!/[a-zA-Z]/.test(formData.password)) {
+      newErrors.password = 'Password should contain at least one letter.';
+  } 
+    if (!/[0-9]/.test(formData.password)) {
+      newErrors.password = 'Password should contain at least one number.';
+  } 
+    if (!/[!@#$%^&*(),.?":{}|<>]/.test(formData.password)) {
+      newErrors.password = 'Password should contain at least one special character.';
+  }
+  
+  if (formData.password !== formData.confirmPassword) {
       newErrors.confirmPassword = 'Passwords do not match.';
     }
 
