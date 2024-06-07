@@ -29,9 +29,6 @@ const Registration = () => {
     if (formData.password.length < 8) {
       newErrors.password = 'Password should be at least 8 characters long.';
     }
-    if (formData.password.length < 8) {
-      newErrors.password = 'Password should be at least 8 characters long.';
-  } 
     if (!/[a-zA-Z]/.test(formData.password)) {
       newErrors.password = 'Password should contain at least one letter.';
   } 
