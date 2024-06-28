@@ -20,7 +20,7 @@ This is a simple React application that allows users to Login with their credent
 
 ## Deployment
 
-[Deployment Link](https://tutorials-fudx.vercel.app/)
+[Deployment Link](https://tutorials-5rfy.vercel.app/)
 
 ## Code References and Important Code Snippets
 
