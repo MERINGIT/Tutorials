@@ -1,0 +1,101 @@
+/* Ensure the body takes up the full screen and has a black background */
+body {
+  margin: 0;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; /* Black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent body scroll */
+}
+
+/* Container for the profile details */
+.profile-detail-container {
+  background-color: white; /* White background */
+  color: black; /* Black text */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 90%; 
+  justify-content: center;
+  align-items: center;
+  max-height: 90vh; /* Limit the height of the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Content inside the profile detail container */
+.profile-detail-content {
+  text-align: left; /* Align text to the left */
+}
+
+/* Styling for the profile image */
+.profile-detail-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+}
+
+/* Styling for the heading */
+.profile-detail-content h1 {
+  font-size: 24px;
+  text-align: center; /* Center the name */
+  margin-bottom: 20px;
+}
+
+/* Styling for the paragraphs */
+.profile-detail-content p {
+  margin: 5px 0; /* Adjust margin for paragraphs */
+  font-style: italic;
+}
+
+/* Styling for the strong elements */
+.profile-detail-content strong {
+  margin-right: 5px;
+}
+
+/* Styling for the friends list */
+.friends-list {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.friends-list strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-detail-container {
+    padding: 15px;
+  }
+
+  .profile-detail-content h1 {
+    font-size: 20px;
+  }
+
+  .profile-detail-content img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-detail-container {
+    padding: 10px;
+  }
+
+  .profile-detail-content h1 {
+    font-size: 18px;
+  }
+
+  .profile-detail-content img {
+    width: 100px;
+    height: 100px;
+  }
+}

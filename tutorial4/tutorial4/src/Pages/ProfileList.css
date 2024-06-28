@@ -1,0 +1,112 @@
+.profile-list-container {
+    padding: 20px;
+    background-color: black; /* Black background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90vw; /* 90% of the viewport width */
+    max-height: 90vh; /* 90% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Hide overflow to prevent scroll bars */
+    margin-top: 20px; /* Margin from the top */
+  }
+  
+  .profile-list-container input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #fff; /* White border */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000; /* Black text */
+  }
+  
+  .profile-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%; /* Full width within the container */
+    max-width: 800px; /* Maximum width for the list */
+    overflow: auto; /* Enable scrolling if content exceeds */
+  }
+  
+  .user-card {
+    display: flex;
+    flex-direction: row; /* Display as row */
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: white; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black; /* Black text */
+    width: calc(50% - 20px); /* Two cards per row, accounting for gap */
+    max-width: 400px; /* Maximum width for each card */
+    overflow: hidden; /* Hide overflow content */
+    word-wrap: break-word; /* Break long words */
+  }
+  
+  .user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .user-card-details {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .user-card-details h3 {
+    margin: 0 0 10px 0; /* Adjust margin for spacing */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+  }
+  
+  .user-card-details p {
+    margin: 0 0 10px 0; /* Adjust margin for spacing */
+  }
+  
+  @media (max-width: 768px) {
+    .user-card {
+      width: 100%; /* Full width on smaller screens */
+      margin: 10px 0; /* Adjust margin for better spacing */
+    }
+  
+    .user-card img {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 10px; /* Add bottom margin */
+      width: 80px;
+      height: 80px;
+    }
+  
+    .user-card-details h3, .user-card-details p {
+      white-space: normal; /* Allow text to wrap */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-card {
+      width: 100%; /* Full width on smaller screens */
+      padding: 15px; /* Adjust padding for better spacing */
+    }
+  
+    .user-card img {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px; /* Adjust margin for better spacing */
+    }
+  
+    .user-card-details h3 {
+      font-size: 18px; /* Adjust font size for readability */
+    }
+  
+    .user-card-details p {
+      font-size: 14px; /* Adjust font size for readability */
+    }
+  }
+  
